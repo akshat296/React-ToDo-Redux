@@ -1,5 +1,4 @@
-export  function createCourses (course)
+export function createCourses (course)
 {
     return {type : 'CREATE', course};
-
 }

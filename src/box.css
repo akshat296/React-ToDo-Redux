@@ -5,9 +5,9 @@
 .boxStructure{
    
     width :400px;
-    height: 125px;
+    height: 180px;
     background: lightyellow;
-    border: 1px solid grey;
+   margin: 5px;
     border-radius:12px; 
     margin-top: 5px;
     padding:1px;
@@ -17,3 +17,17 @@
     animation-duration: 2s;
     position: relative;
   }
+  .green {
+    background: greenyellow;
+}
+.editbox{
+  width :400px;
+  margin: 5px;
+  height: 180px;
+  border: 2px solid lightsalmon;
+  border-radius:12px; 
+  margin-top: 5px;
+  padding:1px;
+  background: lightseagreen;
+
+}

@@ -7,11 +7,26 @@ export default function courseReducers(state = [], action)
 
         case 'DELETE':
         return [...state.filter((item)=>{
-            return item.id !== action.payload.id;
+             return item.id !== action.payload.id;
             })
           ];
         case 'DONE':
-        return [...state];  
+        
+        return [...state.map((item) => {
+            if(item.id === action.payload.id)
+            {item.completed = true;
+           }
+            return item;
+        })];  
+        case 'EDIT':
+        
+        return [...state.map((item) => {
+            if(item.id === action.payload.newpayload.id)
+            {item.title = action.payload.newpayload.title;
+             item.description =action.payload.newpayload.description;       
+           }
+            return item;
+        })];  
         
       
   

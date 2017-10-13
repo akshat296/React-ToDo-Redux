@@ -7,9 +7,11 @@ export default function boxReducers(state = [], action)
        
         case 'SUCCESS':
         return [Object.assign({},action.payload)].find((item)=>{
-             if(item.id === 0 )
+             if(item.id === 0)
+            {return item;}
             return item;
-        });
+        }
+    );
         case 'HIDE':
         return [Object.assign({},action.payload)].find((item)=>{
              if(item.id === 0 )

@@ -1,9 +1,19 @@
-.box{
+@keyframes mymove {
+  from {top:1080px;}
+  to {top: 0px;}
+}
+.boxStructure{
+   
     width :400px;
-    height: 400px;
+    height: 125px;
     background: lightyellow;
-    
-    
     border: 1px solid grey;
-    border-radius:4px; 
+    border-radius:12px; 
+    margin-top: 5px;
+    padding:1px;
+  }
+  .animation{
+    animation-name: mymove;
+    animation-duration: 2s;
+    position: relative;
   }

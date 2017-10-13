@@ -24,12 +24,16 @@
     border: 2px solid green;
     background: #DFDFDF;
     border-radius: 5px;
-    margin-left:27%;    
+    margin-left:35%;    
 }
 .listToDo{
 animation-name: mymove;
 animation-duration: 1s;
 position: relative;
+background: lightblue;
+height: 33px;
+margin-top: 3px;
+border-radius: 2px;
 left:3%;   
 }
 .msgbox{
@@ -39,15 +43,17 @@ left:3%;
     top: 90%;
     left:25%;
     padding: auto;
-    animation-duration: 2s;
+    animation-duration: 4s;
     border: 10% solid yellow;
     background: lightcoral;
     display: block;
     margin: auto;
     text-align: center;
     width:50%;
-    
     border-radius: 6px;
 }
 
+.btn{
+    margin-left:2px;
+}
 
